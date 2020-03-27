@@ -28,16 +28,7 @@ export default function NewIncident() {
             value,
         };
 
-        try {
-            await api.post('incidents', data, {
-                headers:{
-                    Authorization: ongId,
-                }
-            })
-            history.push('/profile');
-        } catch (err) {
-            alert('Erro ao cadastrar caso, tente novamente.')
-        }
+      
     }
 
 
